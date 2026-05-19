@@ -25,6 +25,7 @@ import type { LeetCodeStats } from "@/lib/leetcode";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ContactForm } from "@/components/contact-form";
 
 const navItems = ["Coding", "Projects", "Skills", "About", "Experience", "Contact"];
 
@@ -582,8 +583,8 @@ export function Portfolio({
             Let&apos;s build something useful.
           </h2>
           <p className="mt-4 max-w-xl leading-7 text-slate-600">
-            Update your email and social links in the profile file when you are
-            ready to make this section public.
+            Have an opportunity, collaboration, or project idea? Send a message
+            and I will get back to you.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a href={`mailto:${profile.email}`}>
@@ -605,24 +606,8 @@ export function Portfolio({
           </div>
         </div>
         <Card>
-          <CardContent className="grid gap-4 pt-6">
-            <input
-              className="h-11 rounded-md border border-slate-200 bg-white px-4 text-sm outline-none transition-colors placeholder:text-slate-400 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
-              placeholder="Your name"
-            />
-            <input
-              className="h-11 rounded-md border border-slate-200 bg-white px-4 text-sm outline-none transition-colors placeholder:text-slate-400 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
-              placeholder="Email address"
-              type="email"
-            />
-            <textarea
-              className="min-h-32 resize-none rounded-md border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition-colors placeholder:text-slate-400 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
-              placeholder="Tell me about your project"
-            />
-            <Button>
-              Send Message
-              <ArrowUpRight size={18} />
-            </Button>
+          <CardContent className="pt-6">
+            <ContactForm />
           </CardContent>
         </Card>
       </section>
