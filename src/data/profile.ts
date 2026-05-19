@@ -19,6 +19,7 @@ export const profile = {
   selectedGitHubRepositories: [
     // Add public repo names here when you want them featured.
     // Example: "portfolio", "task-manager", "weather-app"
+    "telegram-bot"
   ],
   timeline: [
     {
