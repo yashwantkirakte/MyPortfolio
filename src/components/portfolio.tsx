@@ -124,8 +124,8 @@ function CodingActivity({ leetcode }: { leetcode: LeetCodeStats }) {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="LeetCode activity"
-          title="Coding consistency, updated automatically."
-          description={`Connected to @${leetcode.username}. The consistency panel reflects recent public LeetCode submission activity.`}
+          title="Consistent practice, tracked through problem solving."
+          description={`A live look at @${leetcode.username}'s LeetCode progress, recent accepted submissions, and solving consistency.`}
         />
         {leetcode.error ? (
           <Card className="border-amber-200 bg-amber-50">
@@ -241,8 +241,8 @@ function Projects({
     <section id="projects" className="mx-auto max-w-6xl px-5 py-20">
       <SectionHeading
         eyebrow="Featured projects"
-        title="Selected GitHub projects, not every repo."
-        description="This section is hybrid: GitHub powers the project cards, while the editable profile file controls which public repos deserve to be featured."
+        title="Projects that show what I am building."
+        description="A curated selection of public work, code experiments, and shipped projects from GitHub."
       />
       {projects.length > 0 ? (
         <div className="grid gap-5 md:grid-cols-3">
@@ -309,10 +309,8 @@ function Projects({
               No featured projects selected yet.
             </h3>
             <p className="mx-auto max-w-2xl leading-7 text-slate-600">
-              When you create a project, push it to GitHub, then add its repo
-              name to <span className="font-semibold">selectedGitHubRepositories</span>
-              in the editable profile file. Only selected public repos will show
-              here.
+              I am currently preparing my first public project showcases. New
+              work will appear here as I publish and refine it.
             </p>
             <a
               href={`https://github.com/${githubUsername}`}
@@ -464,8 +462,8 @@ export function Portfolio({
         <div className="mx-auto max-w-6xl">
           <SectionHeading
             eyebrow="Skills"
-            title="A focused stack you can edit anytime."
-            description="Skills are stored in one simple profile file, so you can keep this section current as your stack grows."
+            title="Tools and technologies I work with."
+            description="A focused stack for building clean interfaces, reliable features, and modern web experiences."
           />
           <div className="grid gap-5 md:grid-cols-3">
             {profile.skills.map((group, index) => (
@@ -530,8 +528,8 @@ export function Portfolio({
         <div className="mx-auto max-w-4xl">
           <SectionHeading
             eyebrow="Experience / Education"
-            title="A clean timeline for credibility."
-            description="Use these entries for jobs, internships, education, certifications, freelance work, or standout milestones."
+            title="Learning, experience, and milestones."
+            description="A simple timeline of education, practice, projects, and professional growth."
           />
           <div className="space-y-4">
             {profile.timeline.map((item, index) => {
